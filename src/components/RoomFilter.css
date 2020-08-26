@@ -1,0 +1,85 @@
+.roomFilter {
+  padding: 5rem 0;
+}
+
+.roomFilter__form {
+  width: 60vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 40px;
+}
+
+.roomFilter__formGroup {
+  text-transform: capitalize;
+}
+
+.roomFilter__formGroup label {
+  display: block;
+  letter-spacing: 3px;
+  margin-bottom: 0.5rem;
+}
+
+.roomFilter__formControl {
+  width: 100%;
+  background: transparent;
+  font-size: 1rem;
+}
+
+input[type="range"] {
+  /* overflow: hidden; */
+  width: 100%;
+  height: 0.7rem;
+  -webkit-appearance: none;
+  background-color: #969693;
+  border-radius: 5px;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  cursor: default;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid black;
+}
+
+.roomFilter__size {
+  display: flex;
+}
+.roomFilter__minsize,
+.roomFilter__maxsize {
+  border-radius: 0.3rem;
+  text-align: center;
+  margin-right: 0.3rem;
+  width: 40%;
+  padding: 0.2rem;
+  border: 1px solid black;
+  font-size: 15px;
+  margin-right: 0.3rem;
+}
+
+.roomFilter__single-extra > label {
+  margin-left: 0.5rem;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 776px) {
+  .roomFilter__form {
+    width: 70vw;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .roomFilter__form {
+    width: 95vw;
+    max-width: 1170px;
+  }
+}
